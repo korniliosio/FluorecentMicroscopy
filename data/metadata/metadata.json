@@ -1,0 +1,3527 @@
+{
+  "accno": "S-BIAD1047",
+  "attributes": [
+    {
+      "name": "Template",
+      "value": "BioImages.v4"
+    },
+    {
+      "name": "Title",
+      "value": "Light My Cells : Bright Field to Fluorescence Imaging Challenge"
+    },
+    {
+      "name": "ReleaseDate",
+      "value": "2025-02-26"
+    },
+    {
+      "name": "AttachTo",
+      "value": "BioImages"
+    }
+  ],
+  "section": {
+    "type": "Study",
+    "attributes": [
+      {
+        "name": "Title",
+        "value": "Light My Cells : Bright Field to Fluorescence Imaging Challenge"
+      },
+      {
+        "name": "ReleaseDate",
+        "value": "2025-02-26"
+      },
+      {
+        "name": "Description",
+        "value": "We present the Light My Cells Challenge Database, a large-scale open-access collection of 56,981 microscopy images designed to support the development of machine learning models for fluorescence prediction from transmitted light images. Acquired across 30 independent studies from 8 national imaging centers, the dataset captures a wide diversity of biological samples, imaging modalities, and acquisition systems. Each transmitted light image\u2014recorded in bright-field, phase contrast, or differential interference contrast\u2014is paired with at least one fluorescence image labeling key subcellular structures: nucleus, mitochondria, tubulin, or actin. All images are standardized in the OME-TIFF format and annotated with rich metadata following the REMBI guidelines. A dedicated preprocessing pipeline ensures dimensional harmonization, best-focus plane selection, and consistent file naming. The database reflects the variability encountered in real-life microscopy experiments, making it ideally suited for training and benchmarking generalizable deep learning models. It is accessible via the BioImage Archive and supports a range of downstream applications, including in silico labeling, segmentation, and cell profiling from label-free imaging."
+      },
+      {
+        "name": "Keywords",
+        "value": "deep learning"
+      },
+      {
+        "name": "Keywords",
+        "value": "fluorescence"
+      },
+      {
+        "name": "License",
+        "value": "CC BY 4.0",
+        "valqual": [
+          {
+            "name": "URL",
+            "value": "https://creativecommons.org/licenses/by/4.0/legalcode"
+          }
+        ]
+      },
+      {
+        "name": "Funding statement",
+        "value": "The database was created through a nationwide collaborative effort within the France-BioImaging infrastructure, involving eight imaging nodes and their associated core facilities."
+      }
+    ],
+    "links": [
+      {
+        "url": "https://lightmycells.grand-challenge.org/",
+        "attributes": [
+          {
+            "name": "Description",
+            "value": "The page of the Light My Cells Challenge  "
+          }
+        ]
+      },
+      {
+        "url": "https://biomedicalimaging.org/2024/accepted-challenges-tutorials/",
+        "attributes": [
+          {
+            "name": "Description",
+            "value": "Page of the accepted challenge at the ISBI conference"
+          }
+        ]
+      }
+    ],
+    "subsections": [
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Dorian Kauffmann"
+          },
+          {
+            "name": "E-mail",
+            "value": "dorian.kauffmann@france-bioimaging.org"
+          },
+          {
+            "name": "Role",
+            "value": "first author"
+          },
+          {
+            "name": "ORCID",
+            "value": "0009-0008-2099-0829"
+          },
+          {
+            "name": "affiliation",
+            "value": "o2",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o21",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Guillaume Gay"
+          },
+          {
+            "name": "E-mail",
+            "value": "guillaume.gay@france-bioimaging.org"
+          },
+          {
+            "name": "Role",
+            "value": "submitter"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-5444-5246"
+          },
+          {
+            "name": "affiliation",
+            "value": "o2",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o21",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Emmanuel Faure"
+          },
+          {
+            "name": "E-mail",
+            "value": "emmanuel.faure@france-bioimaging.org"
+          },
+          {
+            "name": "Role",
+            "value": "principal investigator"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0003-2787-0885"
+          },
+          {
+            "name": "affiliation",
+            "value": "o2",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o21",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Julio Mateos-Langerak"
+          },
+          {
+            "name": "E-mail",
+            "value": "julio.mateos-langerak@igh.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0003-1579-0773"
+          },
+          {
+            "name": "affiliation",
+            "value": "o22",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o23",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Oriane Pourcelot"
+          },
+          {
+            "name": "E-mail",
+            "value": "oriane.pourcelot@igh.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-0659-2778"
+          },
+          {
+            "name": "affiliation",
+            "value": "o22",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Virginie Georget"
+          },
+          {
+            "name": "E-mail",
+            "value": "virginie.georget@mri.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-6998-3100"
+          },
+          {
+            "name": "affiliation",
+            "value": "o23",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o24",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Ma\u00eblle Carraz"
+          },
+          {
+            "name": "E-mail",
+            "value": "maelle.carraz@ird.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0001-8538-1567"
+          },
+          {
+            "name": "affiliation",
+            "value": "o25",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o26",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Juliette Van Dijk"
+          },
+          {
+            "name": "E-mail",
+            "value": "juliette.van-dijk@crbm.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o24",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "St\u00e9phanie Bosch"
+          },
+          {
+            "name": "E-mail",
+            "value": "stephanie.bosch@univ-tlse3.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0009-0008-0675-8767"
+          },
+          {
+            "name": "affiliation",
+            "value": "o27",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Elsa Castellani"
+          },
+          {
+            "name": "E-mail",
+            "value": "elsa.castellani@univ-amu.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o28",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Qiyan Mao"
+          },
+          {
+            "name": "E-mail",
+            "value": "qiyan.mao@univ-amu.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-5564-0457"
+          },
+          {
+            "name": "affiliation",
+            "value": "o28",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Laura Ruiz"
+          },
+          {
+            "name": "E-mail",
+            "value": "laura.ruiz@univ-amu.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o28",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Valentin Asei-Ceschino"
+          },
+          {
+            "name": "E-mail",
+            "value": "valentin.asei-ceschino@igh.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o22",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o23",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Tudor Manoliu"
+          },
+          {
+            "name": "E-mail",
+            "value": "tudor.manoliu@gustaveroussy.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0001-7403-4447"
+          },
+          {
+            "name": "affiliation",
+            "value": "o29",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Julia Bonnet-Gelebart"
+          },
+          {
+            "name": "E-mail",
+            "value": "julia.bonnet-gelebart@univ-rennes.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o30",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Youssef Elhabouz"
+          },
+          {
+            "name": "E-mail",
+            "value": "youssef.elhabouz@univ-rennes.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o30",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Marc Tramier"
+          },
+          {
+            "name": "E-mail",
+            "value": "marc.tramier@univ-rennes1.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0001-8200-6446"
+          },
+          {
+            "name": "affiliation",
+            "value": "o30",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Jacques P\u00e9cr\u00e9aux"
+          },
+          {
+            "name": "E-mail",
+            "value": "jacques.pecreaux@univ-rennes1.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o30",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Louis Ruel"
+          },
+          {
+            "name": "E-mail",
+            "value": "louis.ruel@univ-rennes.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o30",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Jean-Bernard Fiche"
+          },
+          {
+            "name": "E-mail",
+            "value": "fiche@cbs.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0001-8658-1069"
+          },
+          {
+            "name": "affiliation",
+            "value": "o31",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "David Lleres"
+          },
+          {
+            "name": "E-mail",
+            "value": "david.lleres@cbs.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0003-1630-8758"
+          },
+          {
+            "name": "affiliation",
+            "value": "o31",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Christine Doucet"
+          },
+          {
+            "name": "E-mail",
+            "value": "doucet@cbs.cnrs.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-1611-8279"
+          },
+          {
+            "name": "affiliation",
+            "value": "o31",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Erwan Gandon"
+          },
+          {
+            "name": "E-mail",
+            "value": "erwan.gandon@nikon.com"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0009-0002-6214-8417"
+          },
+          {
+            "name": "affiliation",
+            "value": "o32",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Yves Lutz"
+          },
+          {
+            "name": "E-mail",
+            "value": "lutz@igbmc.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o32",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Bertrand Vernay"
+          },
+          {
+            "name": "E-mail",
+            "value": "vernayb@igbmc.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-7843-3872"
+          },
+          {
+            "name": "affiliation",
+            "value": "o32",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Daniel Stockholm"
+          },
+          {
+            "name": "E-mail",
+            "value": "stockho@genethon.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o33",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o34",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Abbass Jaber"
+          },
+          {
+            "name": "E-mail",
+            "value": "ajaber@genethon.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0009-0005-5015-9911"
+          },
+          {
+            "name": "affiliation",
+            "value": "o35",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Aude Moret"
+          },
+          {
+            "name": "E-mail",
+            "value": "aude.moret@inserm.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID"
+          },
+          {
+            "name": "affiliation",
+            "value": "o36",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Romain Morichon"
+          },
+          {
+            "name": "E-mail",
+            "value": "romain.morichon@sorbonne-universite.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-2813-3812"
+          },
+          {
+            "name": "affiliation",
+            "value": "o17",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "M\u00f3nica Fern\u00e1ndez-Monreal"
+          },
+          {
+            "name": "E-mail",
+            "value": "monica.fernandez-monreal@u-bordeaux.fr"
+          },
+          {
+            "name": "Role",
+            "value": "data acquisition"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0001-7278-448X"
+          },
+          {
+            "name": "affiliation",
+            "value": "o18",
+            "reference": true
+          }
+        ]
+      },
+      {
+        "type": "author",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Edouard Bertrand"
+          },
+          {
+            "name": "E-mail",
+            "value": "edouard.bertrand@igmm.cnrs.fr"
+          },
+          {
+            "name": "ORCID",
+            "value": "0000-0002-9642-7994"
+          },
+          {
+            "name": "affiliation",
+            "value": "o19",
+            "reference": true
+          },
+          {
+            "name": "affiliation",
+            "value": "o20",
+            "reference": true
+          },
+          {
+            "name": "Role"
+          }
+        ]
+      },
+      {
+        "accno": "o2",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Laboratoire d\u2019informatique, de robotique et de micro\u00e9lectronique de Montpellier, LIRMM, University of Montpellier CNRS, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "accno": "o17",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Cytom\u00e9trie Imagerie Saint-Antoine, Sorbonne University, CRSA, Paris, France."
+          }
+        ]
+      },
+      {
+        "accno": "o18",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Bordeaux Imaging Center, BIC, University of Bordeaux, CNRS, INSERM, Bordeaux, France."
+          }
+        ]
+      },
+      {
+        "accno": "o19",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Institut de G\u00e9n\u00e9tique Mol\u00e9culaire de Montpellier, IGMM, University of Montpellier CNRS, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "accno": "o20",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Institut de G\u00e9n\u00e9tique Humaine, IGH, University of Montpellier CNRS, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "type": "Funding",
+        "attributes": [
+          {
+            "name": "Agency",
+            "value": "ANR"
+          },
+          {
+            "name": "grant_id",
+            "value": "ANR-10-INBS-04"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-1",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Scan Hela H2B GFP"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa cells are derived from Human papillomavirus-related cervical adenocarcinoma. This cell line is expressing stably histone H2B fused to EGFP. (see Lleres et al, JCB, 2009 as reference)."
+          },
+          {
+            "name": "Biological entity",
+            "value": "HeLa cells expressing stably histone H2B fused to EGFP"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-11",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Shaffner"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "HeLa Walter Schaffner"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-15",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Hela Vienna"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "HeLa Cells GFP-alpha tubuline/mCherry -H2B"
+          },
+          {
+            "name": "Experimental variable",
+            "value": "from Daniel Gerlich IMBA Vienna HeLa Cells stably expressing GFP-alpha tubuline/mCherry -H2B"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-19",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Prostate Cancer"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Description",
+            "value": "High morphology variability in the same plate. Sometimes cells were adherent, or rounded, or rounded but attached by 2 corners."
+          },
+          {
+            "name": "Biological entity",
+            "value": "C4-2B human prostate cancer"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-25",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "U2OS"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-29",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Liver Carcinoma"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "HEP3B human liver carcinoma"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-38",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Urinary bladder transitional cell carcinoma"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "T24 Urinary bladder transitional cell carcinoma"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-43",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS H2B GFP"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Description",
+            "value": "Cells not really healthy. Cells thawed the week before. Not dense."
+          },
+          {
+            "name": "Biological entity",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-53",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Cocker"
+          },
+          {
+            "name": "Organism",
+            "value": "Canis familiaris (dog)"
+          },
+          {
+            "name": "Description",
+            "value": "Cells isolated from normal kidney tissue."
+          },
+          {
+            "name": "Biological entity",
+            "value": "MDCK expressing stably the EB3 protein fused to Cherry."
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-62",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS IGH"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Description",
+            "value": "Cells not really healthy. Cells thawed the week before. Not dense."
+          },
+          {
+            "name": "Biological entity",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-68",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Roussy"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "HELA cells"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-69",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "HeLa stably epxressing RAB6A fused with EGFP"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-78",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human muscle AMU"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "Human muscle fiber, dapi for nucleii, Alexa488-YAP (transcriptional coactivator)\nAlexa568-Titin (Sarcomere), Atto647-phalloidin (myofibrils)"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-84",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human intestine AMU"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "\"Human muscle fiber, dapi for nucleii, Alexa488-YAP (transcriptional coactivator)\nAlexa568-Titin (Sarcomere)\nAtto647-phalloidin (myofibrils)\""
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-88",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Fibroblast CRSA"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "Fibroblast from Dermis"
+          }
+        ]
+      },
+      {
+        "accno": "Biosample-92",
+        "type": "Biosample",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Myoblast Genethon"
+          },
+          {
+            "name": "Organism",
+            "value": "Homo sapiens (human)"
+          },
+          {
+            "name": "Biological entity",
+            "value": "Immortalised Myoblast"
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-2",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Scan Hela H2B GFP"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "cells were plated in glass coverslips. Labeling 15 min before imaging with Mitotracker red for mitochondria."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-12",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Schaffner"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Glass bottom (#1.5) petri. For DIC and fluorescence acquisition, plastic lead was replaced by a 40mm diameter glass coverslip."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-16",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Vienna"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in petri glass bottom dish (#1,5/35 mm: CellVis D35-20-1.5H) in DMEM (4.5g glucose/ml,10% FCS,1% Penicillin/Streptomycin), for 2 days to reach 50% of confluency. Medium was then replaced by DMEM without phenol red containing MitoTracker Red  CMXRos at a  final concentration of 10 nM during 4.5 hours. For DIC and fluorescence acquisition, plastic lead was replaced by a 40mm diameter glass coverslip."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-20",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Prostate Cancer"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom micro-dish (35 mm) ibidi\u00ae in DMEM/F12 complete medium at 300,000 cells per plate, for 24h. Medium was then replaced by opti-MEM (without serum nor phenol red). Nuclei were labeled with DRAQ5 0.1% for 30 min. MitoTracker Green 0.1% was then added for 20 min at 37\u00b0C to stain mitochondria."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-26",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in imaging chamber. Nucleus were labelled with Hoechst marker 15 min before acquisition. MitoGFP plasmides were transfected 48H before transfection."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-30",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Liver Carcinoma"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom micro-dish (35 mm) ibidi\u00ae in DMEM complete medium at 250,000 cells per plate, for 24h. Medium was then replaced by opti-MEM (without serum nor phenol red). Nuclei were labeled with 0.5\u00b5L/mL Hoechst 33342, 10 min. Mito Red was then added at a  final concentration of 10 nM during 30 min at 37\u00b0C to stain mitochondria."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-44",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS H2BGFP st21_29_30"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom (#1,5) fluorodish in DMEM. Microtubules were stained with SiR Tubulin (1/2000) + Verapamil (1/2000) in fluorobrite for 5 hours at 37\u00b0C. ."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-47",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS H2BGFP 2 st19"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom (#1,5) fluorodish in DMEM. Cells were pre-incubated in HBSS 1X buffer, then with HBSS with far-red mitotracker (1/4000) for 20 minutes at 37\u00b0C for mitochondria staining. Medium was replaced by fluorobrite and cells were imaged few hours later."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-54",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Cocker (1et2)"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom (#1,5) 24-well plate. Cells were pre-incubated in HBSS 1X buffer, then HBSS with far-red mitotracker (1/4000) for 20 minutes at 37\u00b0C for mitochondria staining. Medium was replaced by fluorobrite and cells were imaged a few hours later adding vital Hoechst (1/4000) a few minutes before.\ngrowth protocol : DMEM Glutamax 10% SVF (S\u00e9rum de Veau foetal) (FBS) + 1% PS (penicillin spectromycin)."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-57",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "T24 urinary bladder transitional cell carcinoma"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom micro-dish (35 mm) ibidi\u00ae in DMEM complete medium at 150,000 cells per plate, for 24h. Medium was then replaced by opti-MEM (without serum nor phenol red). Nuclei were labeled with DRAQ5 0.1% for 30 min. MitoTracker Green 0.1% was then added for 20 min at 37\u00b0C to stain mitochondria."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-59",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Cocker with Tubulin"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom (#1,5) 24-well plate. Microtubules were stained with SiR Tubulin (1/2000) + Verapamil (1/2000) in fluorobrite for 5 hours at 37\u00b0C and cells were imaged adding vital Hoechst (1/4000) few minutes before."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-63",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS IGH"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom (#1,5) fluorodish in DMEM. Microtubules were stained with SiR Tubulin (1/2000) + Verapamil (1/2000) in fluorobrite for 5 hours at 37\u00b0C. ."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-69",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Roussy"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in Ibidi 35mm diam. glass bottom dish #1,5 in DMEM. "
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-70",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in 35mm glass bottom dish #1,5 in DMEM. Mitochonria were stained with MitoTracker Deep Red (1/4000) in HBSS for 30min at 37\u00b0C and the DNA was stained with Hoechst (20\u00b5g/ml) in PBS for 30min at 37\u00b0C."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-72",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH 2"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in 35mm glass bottom dish #1,5 in DMEM. The DNA was dyed with SiR DNA in far red (1\u00b5M in PBS for 1h at 37\u00b0C."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-75",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH 3"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated on 25x25 coverslips in DMEM. Mitochondria were stained with MitoTracker Deep Red (1/4000) in HBSS for 30min at 37\u00b0C and the DNA was stained with Hoechst (20\u00b5g/ml) in PBS for 30min at 37\u00b0C."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-79",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human muscle AMU"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells  in 35mm petri dish, with glass bottom #1,5, 1e antibody: 4oC, overnight, mouse-anti-YAP: 1:150, rabbit-anti-Titin: 1:150, 2nd antibody: room temperature, 2hrs, Alexa488-anti-mouse: 1:500, Alexa568-anti-rabbit: 1:500, Atto647-phalloidin: 1:500, DAPI is in the vectashield mounting media. Fixation with 4% PFA."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-85",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human intestine AMU"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in glass bottom (#1,5), Human intestine cell DAPI for nuclei, 1/1000 diluted in PBS for 10 min, Alexa488:NuMa, Ac1er PBD++2%Dk serum NuMa anti rb 1/200 then a488 1:200 for 2h, Alexa568:Alpha Tubulin, Ac1er PBD++2%Dk serum alpha tubulin anti mouse 1/200 then a568 1:200 for 2h."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-89",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Fibroblast CRSA"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in clear plate and incubated with probes after adhesion. Cells were plated in \u00b5-Plate 24 Well Black ID 14mm ibiTreat. Mitotracker (Invitrogen M7514, concentration finale = 500nM) was added with hoechst 33342 (final Concentration = 1 \u00b5g/mL)."
+          }
+        ]
+      },
+      {
+        "accno": "Specimen-93",
+        "type": "Specimen",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Myoblast Genethon"
+          },
+          {
+            "name": "Sample preparation protocol",
+            "value": "Cells were plated in a 35mm glass bottom dish (Ibidi, 81156). Mitochondria were stained with MitoTracker (Invitrogen M7514, final concentration = 500nM) diluted in HBSS buffer (with Calcium and Magnesium) for 30 min at 37\u00b0C and the DNA was stained with Hoechst 33342 (final concentration 1\u00b5g/ml) for 30 min at 37\u00b0C. Phallo\u00efdine (Rhodamin) was added (dilution 1/500 in HBSS) and let for 5mn. Fixation in 4% PFA. "
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-3",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Scan Hela H2B GFP"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Home-made setup equipped with a ORCA Flash 4 sCMOS (Hamamatsu) and a 60x Olympus phase contrast objective. "
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size = 106nm \nFor each channel, 20 planes were acquired separated by 400nm each."
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-7",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Urinary bladder transitional cell carcinoma 40x"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. \ndetector model : Hamamatsu OrcaFlash4 C11440-22C SN:000242\nobjective model : Nikon Plan Fluor\n"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 162 nm\n40x/1.3 Oil immersion objective.\nz acquisition of 5\u00b5m with 0,3\u00b5m step size."
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-8",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Urinary bladder transitional cell carcinoma 100x (BF)"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. "
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\n100x/1.3 Oil immersion objective.\nz acquisition of 5\u00b5m with 0,2\u00b5m step size."
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-13",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Schaffner"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Zeiss Axio Observer stand, equipped with environmental control (37\u00b0C and CO2) controlled by ZEN software"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 103  nm"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-17",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Vienna"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Zeiss Axio Observer stand, equipped with environmental control (37\u00b0C and CO2) controlled by ZEN software"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 103 nm"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-21",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Prostate Cancer BF"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. 100X with NA1,4, Oil immersion Nikon Plan Apo objective and Hamamatsu OrcaFlash 4.0 detector."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\nz acquisition of 5\u00b5m with 0,2\u00b5m step size.\nMitoTracker Green FM : Green channel : Ex 475/34 Em 536/40\nDraq5 : Far Red channel : Ex 628/40 Em 676/29\""
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-23",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Prostate Cancer (PC)"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. 100X, NA 1,3, Oil immersion Nikon Plan Fluor Ph3 DLL objective and Hamamatsu orcaFlash 4.0. detector.\n"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\nz acquisition of 5\u00b5m with 0,2\u00b5m step size.\nMitoTracker Green FM : Green channel : Ex 475/34 Em 536/40\nDraq5 : Far Red channel : Ex 628/40 Em 676/29\""
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-27",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Leica DMi8 stand, equipped with environmental control (37\u00b0C and CO2) controlled by Inscoper software. 63x, NA 0,8, dry (air) immersion Leica objective and Hamamatsu OrcaFlash4.0 detector."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "Pixel size 100 nm"
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-31",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Liver Carcinoma (BF)"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. \n 100X/1,4. Oil immersion with Nikon Plan Apo objective and Hamamatsu orcaFlash 4.0. dectector."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\nz acquisition of 5\u00b5m with 0,2\u00b5m step size."
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-34",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Liver Carcinoma"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. 40X/1,3 oil immersion with Nikon Plan Fluor objective and Camera Hamamatsu orcaFlash 4.0 detector."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 162 nm"
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-36",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human Liver Carcinoma (PC)"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": " Inverted Nikon Ti eclipse with NIS software and environmental control. z acquisition of 5\u00b5m with 0,2\u00b5m step size."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\n100X/1,4 oil immersion objective. Camera Hamamatsu orcaFlash 4.0. z acquisition of 5\u00b5m with 0,2\u00b5m step size."
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-46",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS H2BGFP 100x"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti2 microscope with temperature and CO2 controlled chamber, CMOS back-illuminated Prime95B Photometrics camera. Motorized Z of the microscope for the Z-stack."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": " pixel size : 110 nm\n100X/1.45 NA"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-48",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS H2BGFP 60x"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti2 microscope with temperature and CO2 controlled chamber, CMOS back-illuminated Prime95B Photometrics camera. Motorized Z of the microscope for the Z-stack with Prime 95B A17F203017 detector model and  Luminencor Led objective model."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 182 nm \n60X/1.4 NA"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-55",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Cocker"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti2 microscope with temperature and CO2 controlled chamber, CMOS back-illuminated Prime95B Photometrics camera. Motorized Z of the microscope for the Z-stack."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 110 nm\n100X/1.4 NA"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-64",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS IGH BF"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "nverted Zeiss Axio Observer 7, with temperature 37\u00b0C CO2 chamber. Zeiss Apo Plan. ORCA-Flash4 Hamamatsu monochrome camera( pixels, 6.5\u00b5m pixel size)."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 110 nm\n63x/1.4"
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-66",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "U2OS IGH PC"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Zeiss Axio Observer 7, with temperature 37\u00b0C CO2 chamber. Zeiss Apo Plan. ORCA-Flash4 Hamamatsu monochrome camera( pixels, 6.5\u00b5m pixel size)."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 110 nm\n63x/1.4"
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-70",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa Roussy"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Leica DMI8 video-microscope, temperature and gas controled. 63x/1.4 oil immersion objective.\ndetector model : DFC 3000G - Leica CCD\nobjective model :  Leica HC PL APO"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 60 nm"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-71",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Deltavision OMX-V4, temperature and gas controlled.\ndetector model : EMCCD Evolve 512B photometric camera\nobjective model : Olympus 1-U2B836"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 79 nm\n100x/1.4, Oil immersion objective\nMitoTracker far red, BF, Hoechst"
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-73",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH 2"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Home-made microscope, OMX-t. Temperature and gas controlled.\ndetector model : Andor ZYLA-4.2-CL10-W (for SIR-DNA), Andor ZYLA-4.2P-CL10-W (for BF)\nobjective model : Olympus 60 UPLSAPO 60xO"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 102 nm\n60x/1,42\n"
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-76",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "HeLa IGH 3"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Leica THUNDER microscope. \ndetector model : Camera Leica K8 sCMOS - 4.2MP\nobjective model : Leica 100X/1.4 Oil HC PL APO DIC Ph"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\n100x/1.4, Oil immersion objective."
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-80",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human muscle AMU"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Zeiss AxioObserverZ1, LD PlnN, 6,5\u00b5m\ndetector model : Hamamatsu HDCamC11440-42U\nobjective model : Hamamatsu OrcaFlash4LT \n"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 162 nm\n40xLD/0.6, Air immersion objective."
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-82",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human muscle AMU 2"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Zeiss AxioObserverZ1, EC Plan Neofluar Ph3\ndetector model : Hamamatsu HDCamC11440-42U\nobjective model : Hamamatsu OrcaFlash4LT"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 65 nm\n100x/1,3 Oil Ph3"
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-86",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Human intestine AMU"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Zeiss AxioObserverZ1, Plan Apochromat, 6,5\u00b5m\ndetector model : Hamamatsu HDCamC11440-42U\nobjective model : Hamamatsu OrcaFlash4LT"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "63x/1,4 Oil immersion objective"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-90",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Fibroblast CRSA"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Confocal Olympus Fluoview FV3000, Plan Apo 60X/1,35 oil, 1024*1024 pixels with zoom 2\ndetector model : High sensitivity spectral detector (HSD)\nobjective model : UPLXAPO 60XO "
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "pixel size : 103 nm\n60X/1,42, Oil objective immersion"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "differential interference contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "confocal microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Image acquisition-94",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Myoblast Genethon"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Leica - TCS SP8 STED 3X.\ndetector model : Leica HyD\nobjective model : HC PL APO CS2 63x"
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "63x/1.40 OIL"
+          },
+          {
+            "name": "Imaging method",
+            "value": "bright-field microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "image-acquisition-0-removable",
+        "type": "Image acquisition",
+        "attributes": [
+          {
+            "name": "Title",
+            "value": "Urinary bladder transitional cell carcinoma 100x (PC)"
+          },
+          {
+            "name": "Imaging instrument",
+            "value": "Inverted Nikon Ti eclipse with NIS software and environmental control. z acquisition of 5\u00b5m with 0,2\u00b5m step size."
+          },
+          {
+            "name": "Image acquisition parameters",
+            "value": "detector model : Hamamatsu orcaFlash 4.0  C11440-22C SN:000242\nobjective model : Nikon Plan Apo Ph3 DM\n100x/1.4, Oil immersion objective."
+          },
+          {
+            "name": "Imaging method",
+            "value": "phase contrast microscopy"
+          },
+          {
+            "name": "Imaging method",
+            "value": "fluorescence microscopy"
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-4",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Scan Hela H2B GFP"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa cells expressing stably histone H2B fused to EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_28.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Scan Hela H2B GFP"
+              },
+              {
+                "name": "Specimen",
+                "value": "Scan Hela H2B GFP"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Scan Hela H2B GFP"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-14",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "HeLa Schaffner"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa cells in culture"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_16.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "HeLa Shaffner"
+              },
+              {
+                "name": "Specimen",
+                "value": "HeLa Schaffner"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "HeLa Schaffner"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-18",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "HeLa Vienna"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa Cells GFP-alpha tubuline/mCherry -H2B"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_17.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Hela Vienna"
+              },
+              {
+                "name": "Specimen",
+                "value": "HeLa Vienna"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "HeLa Vienna"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-22",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human prostate cancer (BF)"
+          },
+          {
+            "name": "Description",
+            "value": "C4-2B human prostate cancer"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_11.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human Prostate Cancer"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human Prostate Cancer"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human Prostate Cancer BF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-24",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human Prostate Cancer (PC)"
+          },
+          {
+            "name": "Description",
+            "value": "High morphology variability in the same plate. Sometimes cells were adherent, or rounded, or rounded but attached by 2 corners."
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_12.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human Prostate Cancer"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human Prostate Cancer"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human Prostate Cancer (PC)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-28",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "U2OS"
+          },
+          {
+            "name": "Description",
+            "value": "U2OS cells "
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_1.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "U2OS"
+              },
+              {
+                "name": "Specimen",
+                "value": "U2OS"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "U2OS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-32",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human Liver Carcinoma (BF)"
+          },
+          {
+            "name": "Description",
+            "value": "HEP3B human liver carcinoma"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_14.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human Liver Carcinoma"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human Liver Carcinoma"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human Liver Carcinoma (BF)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-35",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human Liver Carcinoma "
+          },
+          {
+            "name": "Description",
+            "value": "HEP3B human liver carcinoma"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_8.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human Liver Carcinoma"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human Liver Carcinoma"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human Liver Carcinoma"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-37",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human Liver Carcinoma (PC)"
+          },
+          {
+            "name": "Description",
+            "value": "HEP3B human liver carcinoma"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_15.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human Liver Carcinoma"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human Liver Carcinoma"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human Liver Carcinoma (PC)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-39",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Urinary bladder transitional cell carcinoma (BF)"
+          },
+          {
+            "name": "Description",
+            "value": "Urinary bladder transitional cell carcinoma"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_10.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Urinary bladder transitional cell carcinoma"
+              },
+              {
+                "name": "Specimen",
+                "value": "T24 urinary bladder transitional cell carcinoma"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Urinary bladder transitional cell carcinoma 100x (BF)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-40",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Urinary bladder transitional cell carcinoma 40x"
+          },
+          {
+            "name": "Description",
+            "value": "Urinary bladder transitional cell carcinoma"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_9.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Urinary bladder transitional cell carcinoma"
+              },
+              {
+                "name": "Specimen",
+                "value": "T24 urinary bladder transitional cell carcinoma"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Urinary bladder transitional cell carcinoma 40x"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-42",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Urinary bladder transitional cell carcinoma (PC)"
+          },
+          {
+            "name": "Description",
+            "value": "Urinary bladder transitional cell carcinoma"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_13.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Urinary bladder transitional cell carcinoma"
+              },
+              {
+                "name": "Specimen",
+                "value": "T24 urinary bladder transitional cell carcinoma"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Urinary bladder transitional cell carcinoma 100x (PC)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-50",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "U2OS H2BGFP 2"
+          },
+          {
+            "name": "Description",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_21.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "U2OS H2B GFP"
+              },
+              {
+                "name": "Specimen",
+                "value": "U2OS H2BGFP st21_29_30"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "U2OS H2BGFP 100x"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-51",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "U2OS H2BGFP 3"
+          },
+          {
+            "name": "Description",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_23.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "U2OS H2B GFP"
+              },
+              {
+                "name": "Specimen",
+                "value": "U2OS H2BGFP 2 st19"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "U2OS H2BGFP 60x"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-52",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "U2OS H2BGFP"
+          },
+          {
+            "name": "Description",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_19.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "U2OS H2B GFP"
+              },
+              {
+                "name": "Specimen",
+                "value": "U2OS H2BGFP 2 st19"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "U2OS H2BGFP 100x"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-56",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Cocker 3"
+          },
+          {
+            "name": "Description",
+            "value": "Normal, adult, female cocker spaniel"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_20.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Cocker"
+              },
+              {
+                "name": "Specimen",
+                "value": "Cocker with Tubulin"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Cocker"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-58",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Cocker 2"
+          },
+          {
+            "name": "Description",
+            "value": "Normal, adult, female cocker spaniel"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_22.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Cocker"
+              },
+              {
+                "name": "Specimen",
+                "value": "Cocker (1et2)"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Cocker"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-60",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Cocker 4"
+          },
+          {
+            "name": "Description",
+            "value": "Normal, adult, female cocker spaniel"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_24.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Cocker"
+              },
+              {
+                "name": "Specimen",
+                "value": "Cocker with Tubulin"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Cocker"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-61",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Cocker"
+          },
+          {
+            "name": "Description",
+            "value": "Normal, adult, female cocker spaniel"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_18.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Cocker"
+              },
+              {
+                "name": "Specimen",
+                "value": "Cocker (1et2)"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Cocker"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-65",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "U2OS IGH (BF)"
+          },
+          {
+            "name": "Description",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_30.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "U2OS IGH"
+              },
+              {
+                "name": "Specimen",
+                "value": "U2OS IGH"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "U2OS IGH BF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-67",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "U2OS IGH 2"
+          },
+          {
+            "name": "Description",
+            "value": "U2OS stably expressing histone H2B fused to EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_29.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "U2OS IGH"
+              },
+              {
+                "name": "Specimen",
+                "value": "U2OS IGH"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "U2OS IGH PC"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-71",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "HeLa Roussy"
+          },
+          {
+            "name": "Description",
+            "value": "HELA cells"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_4.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "HeLa Roussy"
+              },
+              {
+                "name": "Specimen",
+                "value": "HeLa Roussy"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "HeLa Roussy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-72",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "HeLa IGH"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa stably epxressing RAB6A fused with EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_25.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "HeLa IGH"
+              },
+              {
+                "name": "Specimen",
+                "value": "HeLa IGH"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "HeLa IGH"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-74",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "HeLa IGH 2"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa stably epxressing RAB6A fused with EGFP"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_26.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "HeLa IGH"
+              },
+              {
+                "name": "Specimen",
+                "value": "HeLa IGH 2"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "HeLa IGH 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-77",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "HeLa IGH 3"
+          },
+          {
+            "name": "Description",
+            "value": "HeLa cells"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_27.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "HeLa IGH"
+              },
+              {
+                "name": "Specimen",
+                "value": "HeLa IGH 3"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "HeLa IGH 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-81",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human muscle AMU"
+          },
+          {
+            "name": "Description",
+            "value": "Human muscle fiber"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_6.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human muscle AMU"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human muscle AMU"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human muscle AMU"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-83",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human muscle AMU 2"
+          },
+          {
+            "name": "Description",
+            "value": "Human muscle fiber"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_5.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human muscle AMU"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human muscle AMU"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human muscle AMU 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-87",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Human intestine AMU"
+          },
+          {
+            "name": "Description",
+            "value": "Human intestine cells"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_7.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Human intestine AMU"
+              },
+              {
+                "name": "Specimen",
+                "value": "Human intestine AMU"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Human intestine AMU"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-91",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Fibroblast CRSA"
+          },
+          {
+            "name": "Description",
+            "value": "Fibroblast cells"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_2.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Fibroblast CRSA"
+              },
+              {
+                "name": "Specimen",
+                "value": "Fibroblast CRSA"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Fibroblast CRSA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "Study Component-95",
+        "type": "Study Component",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Myoblast Genethon"
+          },
+          {
+            "name": "Description",
+            "value": "Myoblast cells"
+          },
+          {
+            "name": "File List",
+            "value": "FileList/Study_3.json"
+          }
+        ],
+        "subsections": [
+          {
+            "type": "Associations",
+            "attributes": [
+              {
+                "name": "Biosample",
+                "value": "Myoblast Genethon"
+              },
+              {
+                "name": "Specimen",
+                "value": "Myoblast Genethon"
+              },
+              {
+                "name": "Image acquisition",
+                "value": "Myoblast Genethon"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accno": "o21",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "France BioImaging, FBI-Core, University of Montpellier, CNRS, Paris, France."
+          }
+        ]
+      },
+      {
+        "accno": "o22",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Institut de G\u00e9n\u00e9tique Humaine, IGH, University of Montpellier, CNRS, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "accno": "o23",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Montpellier Ressources Imagerie, BioCampus, University of Montpellier, CNRS, INSERM, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "accno": "o24",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Centre de Recherche en Biologie cellulaire de Montpellier, CRBM, University of Montpellier, CNRS, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "accno": "o25",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Molecular Cellular and Developmental Biology Unit (MCD), Centre de Biologie Integrative (CBI), University of Toulouse, CNRS"
+          }
+        ]
+      },
+      {
+        "accno": "o26",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "UMR 152 Pharma Dev, Universit\u00e9 de Toulouse, IRD, 31062 Toulouse, France."
+          }
+        ]
+      },
+      {
+        "accno": "o27",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Centre de Biologie Int\u00e9grative, CBI, Toulouse R\u00e9seau Imagerie, TRI - Light imaging Toulouse, LITC,  CNRS, University of Toulouse, Toulouse, France."
+          }
+        ]
+      },
+      {
+        "accno": "o28",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Institut de Biologie du D\u00e9veloppement de Marseille, IBDM, CNRS, Marseille, France."
+          }
+        ]
+      },
+      {
+        "accno": "o29",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Imaging and Cytometry Platform, PFIC, Gustave Roussy Cancer Campus, Villejuif, France."
+          }
+        ]
+      },
+      {
+        "accno": "o30",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Institut de G\u00e9n\u00e9tique et de D\u00e9veloppement de Rennes, IGDR, CNRS, University of Rennes, Rennes, France."
+          }
+        ]
+      },
+      {
+        "accno": "o31",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Centre de Biologie Structurale, CBS,University of Montpellier, CNRS, INSERM, Montpellier, France."
+          }
+        ]
+      },
+      {
+        "accno": "o32",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Light Microscopy Facility, Institut de G\u00e9n\u00e9tique et de Biologie Mol\u00e9culaire et Cellulaire, IGBMC, INSERM, CNRS, University of Strasbourg, Illkirch, France."
+          }
+        ]
+      },
+      {
+        "accno": "o33",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Paris Sciences & Lettres Research University, PSL, \u00c9cole Pratique des Hautes \u00c9tudes, EPHE, Paris, France."
+          }
+        ]
+      },
+      {
+        "accno": "o34",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Genethon\u2019s Imaging Cytometry Platform, ImCy, Genethon, \u00c9vry, France."
+          }
+        ]
+      },
+      {
+        "accno": "o35",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Genethon, University of Paris-Saclay, University of \u00c9vry, INSERM, \u00c9vry-Courcouronnes, France."
+          }
+        ]
+      },
+      {
+        "accno": "o36",
+        "type": "organisation",
+        "attributes": [
+          {
+            "name": "Name",
+            "value": "Centre de Recherche Saint-Antoine, CRSA, INSERM Paris, France."
+          }
+        ]
+      }
+    ]
+  },
+  "type": "submission"
+}
